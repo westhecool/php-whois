@@ -31,9 +31,9 @@ print_r($whoisclient->lookup("8.8.8.8"));
 Array
 (
     [data] => xxxxxx // raw whois data 
-    [referrals] => 0
-    [server] => whois.arin.net
-    [query] => 8.8.8.8
+    [referrals] => 0 // number of referrals that happened
+    [server] => whois.arin.net // the last server that we were referred to
+    [query] => 8.8.8.8 // the final query that we sent to the server
 )
 */
 // ip
@@ -42,9 +42,9 @@ print_r($whoisclient->lookup("AS15169"));
 Array
 (
     [data] => xxxxxx // raw whois data 
-    [referrals] => 0
-    [server] => whois.radb.net
-    [query] => AS15169
+    [referrals] => 0 // number of referrals that happened
+    [server] => whois.radb.net // the last server that we were referred to
+    [query] => AS15169 // the final query that we sent to the server
 )
 */
 ```
